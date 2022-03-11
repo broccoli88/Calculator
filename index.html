@@ -7,34 +7,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="js/sript.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <!-- <script src="js/calc.js" defer></script> -->
   </head>
   <body>
-    <div id="calculator">
-      <div id="screen">
-        <div id="sum">sum</div>
-        <div id="middle-screen"></div>
-        <div id="operation"></div>
-      </div>
-      <div class="buttons">
-        <span class="button span-2" id="clear">C</span>
-        <span class="button" id="del">del</span>
-        <span class="button sign" id="plus">+</span>
-        <span class="button number">1</span>
-        <span class="button number">2</span>
-        <span class="button number">3</span>
-        <span class="button sign" id="minus">-</span>
-        <span class="button number">4</span>
-        <span class="button number">5</span>
-        <span class="button number">6</span>
-        <span class="button sign" id="multiply">*</span>
-        <span class="button number">7</span>
-        <span class="button number">8</span>
-        <span class="button number">9</span>
-        <span class="button sign" id="divide">/</span>
-        <span class="button number  ">0</span>
-        <span class="button sign" id="dot">.</span>
-        <span class="button span-2" id="equal">=</span>
+    <div class="container">
+      <div class="calculator">
+        <div class="calculator__display">0</div>
+        <div class="calculator__keys">
+          <button class="plus operation" data-action="add">+</button>
+          <button class="minus operation" data-action="subtract">-</button>
+          <button class="multiply operation" data-action="multiply">*</button>
+          <button class="divide operation" data-action="divide">/</button>
+          <button class="number">9</button>
+          <button class="number">8</button>
+          <button class="number">7</button>
+          <button data-delete>del</button>
+          <button class="number">6</button>
+          <button class="number">5</button>
+          <button class="number">4</button>
+          <button class="number">3</button>
+          <button class="number">2</button>
+          <button class="number">1</button>
+          <button class="number">0</button>
+          <button data-decimal>.</button>
+          <button data-clear="clear">C</button>
+          <button class="equals" data-equals="equals">=</button>
+        </div>
       </div>
     </div>
   </body>
